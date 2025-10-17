@@ -1,108 +1,141 @@
 <!doctype html>
 <html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Santón La — CV Profesional</title>
 
-<section class="card">
-  <h3>🎓 Formación Académica</h3>
-  <div class="education">
-    <article>
-      <strong>Máster Universitario en Business Intelligence</strong>
-      <div class="muted">UNIR – Universidad Internacional de La Rioja, Logroño — Octubre 2019 – Octubre 2021</div>
-    </article>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <article>
-      <strong>Grado en Administración y Dirección de Empresas</strong>
-      <div class="muted">UNIR – Universidad Internacional de La Rioja, Logroño — Septiembre 2014 – Octubre 2018</div>
-    </article>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta for printing as PDF -->
+  <meta name="theme-color" content="#0b5cff">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="profile">
+        <div class="avatar" aria-hidden="true">SL</div>
+        <div class="profile-info">
+          <h1 class="name">Santón La</h1>
+          <p class="role">Especialista en Business Intelligence & Machine Learning</p>
+          <div class="contacts">
+            <a href="https://github.com/SANTONLA" target="_blank" rel="noopener noreferrer">github.com/SANTONLA</a>
+            <span>·</span>
+            <a href="mailto:contacto@example.com">contacto@example.com</a>
+            <span>·</span>
+            <span class="location">España</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="toggleTheme" class="btn small" aria-pressed="false">Modo oscuro</button>
+        <button id="printBtn" class="btn small">Imprimir / PDF</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar" aria-label="Resumen y habilidades">
+        <section class="card summary">
+          <h2>Resumen</h2>
+          <p>Profesional en Business Intelligence y Análisis de Datos con experiencia en modelado estadístico (R), machine learning (Python) y visualización (Power BI, Excel). Foco en convertir datos en decisiones accionables para la mejora del negocio.</p>
+        </section>
+
+        <section class="card skills">
+          <h2>Competencias</h2>
+          <ul>
+            <li>Diseño y desarrollo de dashboards</li>
+            <li>Integración de fuentes de datos y ETL</li>
+            <li>Definición y monitorización de KPIs</li>
+            <li>Modelado predictivo y evaluación de modelos</li>
+            <li>SQL avanzado, Git</li>
+          </ul>
+        </section>
+
+        <section class="card tools">
+          <h2>Herramientas</h2>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">R</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Git</span>
+            <span class="chip">Excel</span>
+            <span class="chip">React</span>
+          </div>
+        </section>
+
+        <section class="card education-compact">
+          <h2>Formación</h2>
+          <p><strong>MÁSTER</strong> Business Intelligence — UNIR (2019–2021)</p>
+          <p><strong>GRADO</strong> ADE — UNIR (2014–2018)</p>
+        </section>
+      </aside>
+
+      <section class="content" aria-label="Experiencia y proyectos">
+        <section class="card experience">
+          <h2>Formación Académica</h2>
+
+          <article class="edu-item">
+            <h3>Máster Universitario en Business Intelligence</h3>
+            <div class="muted">UNIR – Universidad Internacional de La Rioja — Oct 2019 – Oct 2021</div>
+            <p class="small">Trabajo de Fin de Máster: Optimización de la cuenta de pérdidas y ganancias mediante técnicas cuantitativas y machine learning orientadas a la toma de decisiones empresariales. Primer contacto con R para análisis y modelado predictivo.</p>
+          </article>
+
+          <article class="edu-item">
+            <h3>Grado en Administración y Dirección de Empresas</h3>
+            <div class="muted">UNIR — Sept 2014 – Oct 2018</div>
+          </article>
+        </section>
+
+        <section class="card ml">
+          <h2>Algoritmos de Machine Learning — práctica</h2>
+          <p>Repaso y depuración de los principales modelos para aplicaciones financieras y de negocio; objetivo: pipelines reproducibles e interpretables.</p>
+          <ol>
+            <li>Regresión Lineal</li>
+            <li>Regresión Logística</li>
+            <li>Árboles de Decisión</li>
+            <li>Random Forest</li>
+            <li>SVM</li>
+            <li>KNN</li>
+            <li>Redes Neuronales (ANN / Deep Learning)</li>
+          </ol>
+        </section>
+
+        <section class="card projects">
+          <h2>Proyectos y ejemplos de trabajo</h2>
+          <ul class="project-list">
+            <li>
+              <strong>Pipeline de scoring financiero</strong>
+              <div class="muted">Python, scikit-learn, SQL</div>
+              <p class="small">Implementación de modelos supervisados con validación temporal y monitorización de drift.</p>
+            </li>
+            <li>
+              <strong>Dashboard de KPIs ejecutivos</strong>
+              <div class="muted">Power BI, DAX</div>
+              <p class="small">Integración de múltiples fuentes y diseño de paneles para seguimiento estratégico.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card additional">
+          <h2>Formación adicional</h2>
+          <p>Curso especializado en Machine Learning y Python — Universidad Pública de Navarra (UPNA).</p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer card" role="contentinfo">
+      <p>Si quieres ver código, proyectos o contactarme: <a href="https://github.com/SANTONLA" target="_blank" rel="noopener noreferrer">github.com/SANTONLA</a></p>
+    </footer>
   </div>
 
-  <h4>Trabajo de Fin de Máster</h4>
-  <p class="tfm">
-    “Optimización de la cuenta de pérdidas y ganancias mediante técnicas cuantitativas y machine learning desde la perspectiva del Business Intelligence.”
-  </p>
-  <p>Primer contacto con R para análisis de datos y modelado predictivo orientado a la mejora de la toma de decisiones empresariales. Desde entonces he seguido perfeccionando algoritmos de machine learning, especialmente para datos financieros y de negocio.</p>
-</section>
-
-<section class="card">
-  <h3>💻 Competencias</h3>
-
-  <div class="grid">
-    <div>
-      <h4>🧠 Business Intelligence</h4>
-      <ul>
-        <li>Diseño y desarrollo de dashboards</li>
-        <li>Integración de fuentes de datos</li>
-        <li>Definición y monitorización de KPIs</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>📈 Análisis de Datos</h4>
-      <ul>
-        <li>Limpieza, transformación y preparación de datos</li>
-        <li>Identificación de patrones y tendencias</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>🤖 Machine Learning</h4>
-      <ul>
-        <li>Algoritmos supervisados y no supervisados (clasificación, regresión, clustering)</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>📌 Toma de decisiones basada en datos</h4>
-      <p>Capacidad para convertir datos en conocimiento accionable y recomendaciones concretas para negocio.</p>
-    </div>
-  </div>
-</section>
-
-<section class="card">
-  <h3>🛠 Herramientas y Tecnologías</h3>
-  <ul class="tools">
-    <li>R — modelado estadístico, visualización y análisis</li>
-    <li>Python (avanzado) — análisis de datos, machine learning y automatización</li>
-    <li>Power BI y Excel avanzado</li>
-    <li>SQL (avanzado)</li>
-    <li>Git / GitHub</li>
-  </ul>
-</section>
-
-<section class="card">
-  <h3>📚 Formación Adicional</h3>
-  <p>Curso especializado en Machine Learning y Python — Universidad Pública de Navarra (UPNA). Profundización práctica en algoritmos y su aplicación a problemas reales.</p>
-</section>
-
-<section class="card">
-  <h3>🤖 Algoritmos de Machine Learning (práctica y depuración)</h3>
-  <p>Actualmente estoy repasando y depurando la implementación de los 7 modelos más comunes para mejorar su rendimiento, interpretabilidad y ajuste en contextos financieros:</p>
-  <ol>
-    <li><strong>Regresión Lineal</strong> — predicción de valores continuos.</li>
-    <li><strong>Regresión Logística</strong> — clasificación binaria y multiclase.</li>
-    <li><strong>Árboles de Decisión</strong> — modelos interpretables para clasificación/regresión.</li>
-    <li><strong>Bosques Aleatorios (Random Forest)</strong> — ensamblado para mayor precisión.</li>
-    <li><strong>SVM (Máquinas de Vectores de Soporte)</strong> — separación óptima entre clases.</li>
-    <li><strong>K-Vecinos más Cercanos (KNN)</strong> — basados en similitud de instancias.</li>
-    <li><strong>Redes Neuronales Artificiales (ANN / Deep Learning)</strong> — para tareas complejas de reconocimiento y predicción.</li>
-  </ol>
-  <p>Objetivo: optimizar e integrar estos modelos en pipelines reproducibles aplicables a problemas financieros y de negocio.</p>
-</section>
-
-<section class="card">
-  <h3>📌 Mis programas y plataformas favoritas</h3>
-  <div class="chips">
-    <span class="chip">JavaScript</span>
-    <span class="chip">TypeScript</span>
-    <span class="chip">Python</span>
-    <span class="chip">Storybook</span>
-    <span class="chip">GitHub</span>
-    <span class="chip">SAP</span>
-    <span class="chip">Power BI</span>
-    <span class="chip">Canva</span>
-    <span class="chip">React / Next.js</span>
-  </div>
-</section>
-
-<footer class="footer card">
+  <script src="script.js" defer></script>
+</body>
+</html>
   <p>Si quieres ver código, proyectos o contactarme: <a href="https://github.com/SANTONLA" target="_blank" rel="noopener">github.com/SANTONLA</a></p>
 </footer>
