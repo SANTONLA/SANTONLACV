@@ -1,0 +1,28 @@
+name: Deploy to gh-pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node (cached, not strictly required but safe)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: 
+          publish_dir: ./
+          # si prefieres, utiliza GITHUB_TOKEN en lugar de deploy_key
+          # la acción usa GITHUB_TOKEN por defecto si deploy_key está vacío
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # configuración para evitar borrar accidentalmente archivos importantes
+          allow_empty_commit: false
