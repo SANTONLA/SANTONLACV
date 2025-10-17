@@ -1,0 +1,111 @@
+<div class="cv" aria-label="Currículum">
+  <!-- Lateral: foto, datos y habilidades -->
+  <aside class="sidebar" aria-labelledby="nombre">
+    <!-- Para usar una foto real: sustituye el div.avatar por
+         <div class="avatar"><img src="ruta/a/tu-foto.jpg" alt="Silvia Antón"></div>
+    -->
+    <div class="avatar" aria-hidden="true">
+      <!-- Iniciales por defecto -->
+      SA
+    </div>
+
+    <!-- EDITA ESTOS DATOS -->
+    <div id="nombre" class="name">Silvia Antón</div>
+    <div class="role">Desarrolladora Full Stack</div>
+
+    <div class="divider" role="presentation"></div>
+
+    <div class="contact" aria-label="Contacto">
+      <div class="contact-item"><strong>📧</strong><div><a href="mailto:silvia@example.com">silvia@example.com</a></div></div>
+      <div class="contact-item"><strong>📱</strong><div>+34 600 000 000</div></div>
+      <div class="contact-item"><strong>🌐</strong><div><a href="https://tusitio.com" target="_blank" rel="noopener">tusitio.com</a></div></div>
+      <div class="contact-item"><strong>💼</strong><div><a href="https://github.com/SANTONLA" target="_blank" rel="noopener">github.com/SANTONLA</a></div></div>
+    </div>
+
+    <div class="divider" role="presentation"></div>
+
+    <div class="skills-list" aria-labelledby="skills-title">
+      <h4 id="skills-title" style="margin:0 0 8px 0;">Habilidades</h4>
+      <ul>
+        <li><span class="skill-pill">JavaScript</span></li>
+        <li><span class="skill-pill">React</span></li>
+        <li><span class="skill-pill">Node.js</span></li>
+        <li><span class="skill-pill">HTML/CSS</span></li>
+      </ul>
+    </div>
+
+    <div class="divider" role="presentation"></div>
+
+    <div class="languages" aria-labelledby="lang-title">
+      <h4 id="lang-title" style="margin:0 0 8px 0;">Idiomas</h4>
+      <ul>
+        <li>Español — Nativo</li>
+        <li>Inglés — B2/C1</li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- Principal: resumen, experiencia, educación, proyectos -->
+  <section class="main">
+    <header class="section" aria-labelledby="resumen">
+      <h2 id="resumen" style="margin:0 0 8px 0">Resumen profesional</h2>
+      <p class="summary">
+        Ingeniera de software con X años de experiencia desarrollando aplicaciones web full-stack.
+        Me centro en crear soluciones escalables y con buena experiencia de usuario. Busco oportunidades
+        para liderar proyectos y mejorar procesos mediante buenas prácticas y pruebas automatizadas.
+      </p>
+    </header>
+
+    <div class="section" aria-labelledby="exp-title">
+      <h3 id="exp-title">Experiencia</h3>
+
+      <article class="job" aria-labelledby="job1">
+        <h4 id="job1">Empresa Ejemplo — Desarrolladora Frontend</h4>
+        <div class="meta">Ene 2022 — Presente · Madrid, España</div>
+        <p>Trabajo en el equipo de producto construyendo interfaces accesibles con React y TypeScript. Lideré la
+           migración a un sistema de componentes y mejoré el rendimiento en un 30%.</p>
+      </article>
+
+      <article class="job" aria-labelledby="job2">
+        <h4 id="job2">Startup X — Desarrolladora Full Stack</h4>
+        <div class="meta">Jul 2019 — Dic 2021 · Remoto</div>
+        <p>Desarrollo de APIs con Node.js, bases de datos PostgreSQL y despliegues en AWS. Implementé integración
+           continua y cobertura de pruebas automatizadas.</p>
+      </article>
+    </div>
+
+    <div class="section" aria-labelledby="edu-title">
+      <h3 id="edu-title">Educación</h3>
+      <div class="education-item">
+        <strong>Grado en Ingeniería Informática</strong> — Universidad Ejemplo (2015 — 2019)
+      </div>
+      <div class="education-item">
+        <strong>Bootcamp Full Stack</strong> — Academia Código (2019)
+      </div>
+    </div>
+
+    <div class="section projects" aria-labelledby="proj-title">
+      <h3 id="proj-title">Proyectos destacados</h3>
+
+      <div class="proj" role="article" aria-label="Proyecto A">
+        <div class="left">
+          <strong>Proyecto A</strong>
+          <div style="color:var(--muted); font-size:13px; margin-top:6px;">Descripción corta: una aplicación para gestionar tareas con colaboración en tiempo real.</div>
+        </div>
+        <div class="right"><a href="#" style="color:var(--accent); text-decoration:none">Ver →</a></div>
+      </div>
+
+      <div class="proj" role="article" aria-label="Proyecto B">
+        <div class="left">
+          <strong>Proyecto B</strong>
+          <div style="color:var(--muted); font-size:13px; margin-top:6px;">Librería open-source para validaciones de formularios.</div>
+        </div>
+        <div class="right"><a href="#" style="color:var(--accent); text-decoration:none">GitHub</a></div>
+      </div>
+    </div>
+
+    <footer style="color:var(--muted); font-size:13px; margin-top:8px;">
+      Última actualización: Octubre 2025
+    </footer>
+  </section>
+</div>
