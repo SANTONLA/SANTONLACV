@@ -40,8 +40,4 @@ git remote add origin git@github.com:SANTONLA/<your-repo>.git
 git push -u origin main
 ```
 
-Si quieres, puedo:
-- Crear el repo y hacer el push por ti (necesito el nombre del repositorio).
-- Configurar un workflow diferente (por ejemplo, desplegar desde `docs/`).
-- Añadir una versión más compacta optimizada para PDF (una sola página).
-```
+``
